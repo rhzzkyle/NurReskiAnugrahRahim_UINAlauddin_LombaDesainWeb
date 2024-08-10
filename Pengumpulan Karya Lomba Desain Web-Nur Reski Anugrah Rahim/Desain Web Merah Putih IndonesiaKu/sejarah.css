@@ -1,0 +1,411 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: repeating-linear-gradient(
+        50deg,
+        #463b14c6,
+        #392512 10px,
+        #382515a7 10px,
+        #2c2717fb 20px
+    );
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.top-bar {
+    background-color: #991b1b;
+    display: flex;
+    align-items: center;
+}
+
+.bendera{
+    width: 500px;
+}
+
+.bendera2{
+    margin-left: auto;
+    width: 500px;
+}
+
+.top-bar .circle {
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    left: 46%;
+}
+
+.bottom-bar {
+    background-color: #f4a261;
+    padding: 10px 0;
+}
+
+.right-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button {
+    padding: 0.1rem 1rem;
+    background-color: #dc2626; 
+    border-radius: 0.375rem;
+    font-weight: 800;
+    font-family: sans-serif;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.7s;
+    text-shadow: 3px 5px 2px #be123c;
+    font-size: 1.1rem;
+    z-index: 30;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+}
+
+.button:after {
+    content: '';
+    position: absolute;
+    height: 0.25rem;
+    width: 0.25rem;
+    background-color: #991b1b;
+    left: 1.25rem;
+    bottom: 0;
+    transform: translateY(100%);
+    border-radius: 0.375rem;
+    transition: all 0.7s;
+    z-index: -20;
+}
+
+.button:hover:after {
+    transform: scale(300);
+}
+
+.button:hover {
+    text-shadow: 2px 2px 2px #fda4af;
+}
+
+@media (max-width: 768px) {
+    .top-bar div{
+        width: 15%;
+        height: 20px;
+    }
+    .left-group{
+        margin-left: 1cm;
+        width: 100%;
+    }
+
+    .right-group {
+        width: 100%;
+    }
+
+    .top-bar .circle {
+        width: 80px;
+        height: 60px;
+    }
+
+    .button {
+        font-size: .9rem;
+        padding: .3rem .5rem;
+    }
+}
+
+
+
+section{
+    margin-top:165px;
+}
+
+.sejarah1 img{
+    width: 100%;
+    height: 570px;
+}
+
+.sejarah2 .satu{
+    width: 100%;
+    height: 100%;
+    margin-top: 106px;
+    transform: scaleY(-1);
+}
+
+.sejarah2 .dua{
+    width: 100%;
+    height: 1100px;
+    margin-top: -4px;
+}
+
+.atas{
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-top: -51.8cm;
+}
+
+.bag1{
+    width: 100%;
+    background-color: #991b1b6f;
+}
+.bag2{
+    width: 100%;
+    background-color: #9d501176;
+}
+.bag3{
+    width: 100%;
+    background-color: #420d0d77;
+}
+
+.atas h2{
+    padding: 10px 30px;
+    font-weight: 800;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+.atas p{
+    text-align: justify;
+    line-height: 1.5;
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tengah{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.tengah .bag1{
+    width: 50%;
+    background-color: #37201657;
+}
+.tengah .bag1 img{
+    width: 80%;
+    height: 560px;
+    padding: 50px 0px 50px 0px;
+}
+.tengah .bag1 img:hover{
+    transition: 0.5s ease;
+    transform: scale(1.05);
+}
+
+.tengah .bag2{
+    width: 100%;
+    background-color: #6b040476;
+    padding: 12px 35px 10px 30px;
+}
+
+.tengah h2{
+    padding: 10px 30px;
+    font-weight: 800;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+.tengah p{
+    text-align: justify;
+    line-height: 1.5;
+    padding: 0px 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bawah{
+    display: flex;
+    width: 100%;
+}
+
+.bawah .bag1{
+    width: 50%;
+    background-color: #37201657;
+}
+.bawah .bag1 img{
+    width: 80%;
+    height: 560px;
+    padding: 50px 0px 30px 0px;
+}
+.bawah .bag1 img:hover{
+    transition: 0.5s ease;
+    transform: scale(1.05);
+}
+
+.bawah .bag2{
+    width: 100%;
+    background-color: #6b040476;
+    padding: 20px 30px 20px 35px;
+}
+
+.bawah h2{
+    padding: 10px 30px;
+    font-weight: 800;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+.bawah p{
+    text-align: justify;
+    line-height: 1.5;
+    padding: 0px 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bag1:hover, .atas .bag2:hover, .atas .bag3:hover, .tengah .bag2:hover, .bawah .bag2:hover{
+    background-color: #fad6d6;
+}
+
+.foot{
+    width: 100%;
+    height: 1.5cm;
+    background-color: #991b1b;
+    margin-top: -2px;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 40px;
+    position: relative;
+    max-width: 100%;
+    margin-top: -7.6cm;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: #991b1b;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+}
+
+.timeline a{
+    text-decoration: none;
+}
+
+.kotak {
+    background-color: #e8aa7a;
+    padding: 15px;
+    border-radius: 16px;
+    position: relative;
+    width: 200px;
+    margin: 0 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(217, 31, 31, 0.2);
+    z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.kotak::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #991b1b;
+    border-radius: 50%;
+    top: 52%;
+    left: -8px;
+    transform: translateY(-50%);
+}
+
+.kotak:hover{
+    transform: scale(1.02);
+    background-color: #d39873;
+    box-shadow: 0 10px 20px #7a0101cf;
+}
+
+.kotak1 h2 {
+    margin: 0;
+    color: black;
+    text-shadow: 2px 1px 2px #b62318;
+    font-size: 1.5em; 
+    line-height: 1.5;
+}
+
+@media (max-width: 768px){
+    .timeline{
+        width: 96.1%;
+        padding: 0 15px 10px 10px;
+        font-size: .7rem;
+        overflow-x: auto;
+        margin-top: -7cm;
+    }
+
+    .timeline::before{
+        top: 45%;
+        width: 140%;
+    }
+
+    .kotak{
+        width: 130px;
+    }
+    
+    .sejarah1 img{
+        height: 500px;
+    }
+
+    .sejarah2 .satu, .sejarah2 .dua{
+        display: none;
+    }
+
+    .atas{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.72cm;
+        color: #ded6d1;
+    }
+
+    .atas h2, .tengah h2, .bawah h2{
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .atas p, .tengah p, .bawah p{
+        margin-top: -.5cm;
+        font-size: 14px;
+    }
+
+    .tengah, .bawah{
+        color: #ded6d1;
+    }
+
+    .tengah .bag1, .bawah .bag1{
+        display: none;
+    }
+
+    .tengah .bag2{
+        background-color: #991b1b6f;
+        padding: 12px 0 10px 0;
+    }
+    .bawah .bag2{
+        background-color: #9d501176;
+        padding: 12px 0 10px 0;
+    }
+
+    .bag1:hover, .atas .bag2:hover, .atas .bag3:hover, .tengah .bag2:hover, .bawah .bag2:hover{
+        background-color: #390e0e;
+    }
+}
+
+@media (max-width: 500px){
+    .timeline{
+        width: 94.9%;
+    }
+    .timeline::before{
+        top: 45%;
+        width: 152%;
+    }
+}

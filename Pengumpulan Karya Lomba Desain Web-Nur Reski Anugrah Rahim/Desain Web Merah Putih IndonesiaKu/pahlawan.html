@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merah Putih Indonesiaku</title>
+    <style>
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background: url(img/bg2.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          overflow-x: hidden;
+      }
+
+      .navbar {
+          position: fixed; 
+          top: 0;
+          left: 0;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          z-index: 100;
+      }
+
+      .top-bar {
+          background-color: #991b1b;
+          display: flex;
+          align-items: center;
+      }
+      
+      .bendera{
+          width: 500px;
+      }
+      
+      .bendera2{
+          margin-left: auto;
+          width: 500px;
+      }
+
+      .top-bar .circle {
+          width: 100px;
+          height: 70px;
+          position: absolute;
+          left: 46%;
+      }
+
+      .bottom-bar {
+          background-color: #f4a261; 
+          padding: 10px 0;
+      }
+
+      .right-group {
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+      }
+
+      .button {
+          padding: 0.1rem 1rem;
+          background-color: #dc2626;
+          border-radius: 0.375rem;
+          font-weight: 800;
+          font-family: sans-serif;
+          position: relative;
+          overflow: hidden;
+          transition: all 0.7s;
+          text-shadow: 3px 5px 2px #be123c;
+          font-size: 1.1rem;
+          z-index: 30;
+      }
+
+      .button a{
+          text-decoration: none;
+          color: white;
+      }
+    
+      .button:after {
+          content: '';
+          position: absolute;
+          height: 0.25rem;
+          width: 0.25rem;
+          background-color: #991b1b;
+          left: 1.25rem;
+          bottom: 0;
+          transform: translateY(100%);
+          border-radius: 0.375rem;
+          transition: all 0.7s;
+          z-index: -20;
+      }
+
+      .button:hover:after {
+          transform: scale(300);
+      }
+
+      .button:hover {
+          text-shadow: 2px 2px 2px #fda4af;
+      }
+    
+      @media (max-width: 768px) {
+        .top-bar div{
+            width: 15%;
+            height: 20px;
+        }
+        .left-group{
+            margin-left: 1cm;
+            width: 100%;
+        }
+
+        .right-group {
+            width: 100%;
+        }
+        .top-bar .circle {
+            width: 80px;
+            height: 60px;
+        }
+
+        .button {
+            font-size: .9rem;
+            padding: .3rem .5rem;
+        }
+      }
+
+      @media  (max-width: 500px){
+        .bendera{
+          display: none;
+        }
+      } 
+
+      section{
+          margin-top: 155px;
+      }
+
+      .utama img{
+          width: 100%;
+          height: 580px;
+      }
+
+      .kotak{
+          width: 500px;
+          height: 500px;
+          border-radius: 35%;
+          background: linear-gradient(#991b1b, #ff8e1c, #ffc940);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+          margin: 40px 0 30px 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .kotak:hover{
+        transition: 0.7s ease;
+        transform: scale(1.03);
+      }
+    
+      .image{
+          width:500px;
+          height:100px;
+      }
+    
+      img{
+          width:150px;
+          height:110px;
+      }
+    
+      .bio{
+          width:500px;
+          height:100px;
+          margin-top: 25px;
+      }
+
+      .desc{
+          width:350px;
+          height:200px;
+          line-height: 1.3;
+          margin-top: -10px;
+      }
+    
+      .cont1{
+          display: flex;
+          justify-content: center;
+          gap:50px;
+      }
+
+      .cont2{
+          display: flex;
+          justify-content: center;
+          gap:330px;
+          padding-bottom: .5cm;
+      }
+
+      .foot{
+          width: 100%;
+          height: 1.5cm;
+          background-color: #991b1b;
+          margin-top: -4px;
+      }
+
+      @media (max-width: 995px){
+        .utama img{
+          height: 480px;
+        }
+
+          .kotak{
+            width: 400px;
+            font-size: .9rem;
+            margin: 40px 0 20px 0;
+          }
+
+          .cont1, .cont2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+          }
+      }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="top-bar">
+            <image class="bendera" src="img/free.png"></image>
+            <image class="circle" src="https://png.pngtree.com/png-vector/20220828/ourmid/pngtree-logo-garuda-pancasila-design-png-image_6126748.png"></image>
+            <image class="bendera2" src="img/free.png"></image>
+        </div>
+
+        <div class="bottom-bar">
+            <div class="right-group">
+                <div class="button"><a href="beranda.html">Beranda</a></div>
+                <div class="button"><a href="sejarah.html">Sejarah</a></div>
+                <div class="button"><a href="pahlawan.html">Pahlawan</a></div>
+                <div class="button"><a href="presiden.html">Presiden</a></div>
+                <div class="button"><a href="galeri.html">Galeri</a></div>
+            </div>
+        </div>
+    </div>
+  
+    <section>
+      <div class="utama">
+        <img src="img/pahlawan.png">
+      </div>
+      <div class="foot"  id="satu"></div>
+      
+      <center>
+      <div class="kotak"><center>
+        <div class="image">
+          <img src="img/pngtree-illustration-of-sultan-hasanudin-makasar-the-hero-of-the-struggle-for-png-image_8991044.png" alt="" />
+        </div>
+        
+        <div class="bio">
+          <b><p>Nama: Sultan Hasanuddin </p></b>
+          <p>Tanggal lahir: 12 Januari 1631 </p>
+          <p>Asal Provinsi: Sulawesi Selatan </p>
+        </div>
+        <div class="desc" id="dua">
+          <p>Sultan Hasanuddin adalah Raja Gowa ke-16 yang terkenal karena perlawanan gigihnya terhadap
+            penjajahan Belanda pada abad ke-17. Beliau diberi julukan "Ayam Jantan dari Timur" karena
+            keberaniannya dalam melawan VOC. Meskipun akhirnya harus menandatangani Perjanjian Bungaya
+            pada tahun 1667, perjuangan Sultan Hasanuddin tetap dikenang sebagai simbol keberanian dan patriotisme.</p>
+        </div>
+      </div></center>
+      </center>
+      
+      
+      <div class="cont1">
+      <div class="kotak"><center>
+        <div class="image">
+          <img src="img/pngtree-ki-hadjar-dewatara-vector-png-image_9102055.png" alt="" />
+        </div>
+        
+        <div class="bio">
+          <b><p>Nama: Ki Hadjar Dewantara</p></b>
+          <p>Tanggal Lahir: 2 Mei 1889 </p>
+          <p>Asal Provinsi: Yogyakarta </p>
+        </div>
+        <div class="desc">
+          <p>Ki Hadjar Dewantara adalah pendiri Taman Siswa, lembaga pendidikan yang
+            memberikan pendidikan kepada rakyat pribumi Indonesia pada masa penjajahan Belanda.
+            Ia dikenal dengan semboyan "Ing ngarsa sung tuladha, ing madya mangun karsa, tut wuri
+            handayani" yang berarti "Di depan memberi teladan, di tengah memberi semangat, di
+            belakang memberi dorongan." Tanggal lahirnya diperingati sebagai Hari Pendidikan Nasional.</p>
+        </div>
+      </div></center> 
+      
+      <div class="kotak"><center>
+        <div class="image">
+          <img src="img/moh hatta.png" alt="" />
+        </div>
+        
+        <div class="bio">
+          <b><p>Nama:  H. Mohammad Hatta </p></b>
+          <p>Tanggal Lahir: 12 Agustus 1902 </p>
+          <p>Asal Provinsi: Sumatera Barat </p>
+        </div>
+        <div class="desc" id="tiga">
+          <p>Mohammad Hatta, dikenal sebagai Bung Hatta, adalah proklamator kemerdekaan Indonesia
+            bersama Sukarno dan Wakil Presiden pertama Republik Indonesia. Sebagai ekonom dan
+            pemimpin politik, Hatta memainkan peran penting dalam merancang dasar-dasar ekonomi
+            dan politik negara yang baru merdeka. Ia dikenal dengan prinsip-prinsip keadilan
+            sosial dan pembangunan yang berkelanjutan.</p>
+        </div>
+      </div></center>
+      </div>
+
+      <div class="cont2">
+      <div class="kotak"><center>
+        <div class="image">
+          <img src="img/Pangeran-Antasari.png" alt="" />
+        </div>
+        
+        <div class="bio">
+          <b><p>Nama: Pangeran Antasari </p></b>
+          <p>Tanggal Lahir: 7 Mei 1980 </p>
+          <p>Asal Provinsi: Kalimantan Selatan</p>
+        </div>
+        <div class="desc">
+          <p>Pangeran Antasari adalah pemimpin perlawanan rakyat Banjar di Kalimantan Selatan
+            melawan penjajahan Belanda pada pertengahan abad ke-19. Ia dikenal dengan seruannya
+            "Haram Manyarah Waja Sampai Kaputing" yang berarti "Pantang Mundur Sebelum Kemenangan
+            Dicapai." Perjuangannya terus dikenang sebagai simbol perlawanan dan semangat
+            patriotisme rakyat Kalimantan Selatan.</p>
+        </div>
+      </div></center> 
+      
+      <div class="kotak"><center>
+        <div class="image">
+          <img src="img/frans-kaisiepo-sosok-pahlawan-nasional-asal-papua-1.png" alt="" />
+        </div>
+        
+        <div class="bio">
+          <b><p>Nama: Frans Kaisiepo </p></b>
+          <p>Tanggal Lahir: 10 Oktober 1921 </p>
+          <p>Asal Provinsi: Papua </p>
+        </div>
+        <div class="desc">
+          <p>Frans Kaisiepo adalah tokoh penting dalam perjuangan integrasi Papua ke dalam
+            wilayah RI. Ia terlibat aktif dalam Konferensi Malino tahun 1946
+            yang membahas pembentukan Negara Indonesia Timur sebagai bagian dari RIS.
+            Kaisiepo juga pernah menjabat sebagai Gubernur Papua dan terus
+            berjuang untuk kesejahteraan dan integrasi Papua dengan Indonesia. Tanggal lahirnya
+            diperingati sebagai Hari Otonomi Khusus Papua.</p>
+        </div>
+      </div></center>  
+      </div>
+
+      <div class="foot"></div>
+    </section>
+</body>
+</html> 
